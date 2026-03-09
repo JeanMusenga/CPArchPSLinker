@@ -24,6 +24,7 @@ solutions from SO for a given architectural problem described in a GitHub commit
 architecture-aware association features, and the relevance probabilities predicted by the DML-based model in Stage-1. These features are jointly leveraged within a learning-to-rank model to
 link each architectural problem to its relevant solutions and to produce a ranked list of candidate solutions. This design enables CPArchPSLinker to link the most relevant architectural solutions from SO to a given architectural problem.
 
+
 **CPArchPSLinker Architecture**
 
 CPArchPSLinker architecture comprises five primary layers. 
