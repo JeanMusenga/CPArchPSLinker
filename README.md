@@ -10,6 +10,10 @@ encounter architectural problems during OSS development, such as architectural a
 relevant architectural solutions time-consuming and labor-intensive. To address this gap, we define the problem of linking architectural knowledge across Software
 Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an automated approach for this task.
 
+## 🏗️ CPArchPSLinker Architecture
+
+CPArchPSLinker architecture comprises five primary layers. 
+
 ## 🏗️ CPArchPSLinker
 
 **CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in Commits and Issues. CPArchPSLinker operates in two key stages:
