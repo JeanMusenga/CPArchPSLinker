@@ -18,8 +18,6 @@ CPArchPSLinker architecture comprises five primary layers.
 
 ![CPArchPSLinker Architecture](images/CPArchPSLinker_Architecture.pdf)
 
-## 🏗️ CPArchPSLinker
-
 **CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in Commits and Issues. CPArchPSLinker operates in two key stages:
 
 • Stage-1: Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate crossplatform
