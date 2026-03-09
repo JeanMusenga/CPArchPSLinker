@@ -47,9 +47,12 @@ CPArchPSLinker architecture comprises five primary layers.
 
 ## 🛠️ Dataset Description
 
-The `data/` directory includes:
-- `CrossPArchPSBench.xlsx` – contains our proposed architectural benchmark dataset used to evaluate the potential techniques for linking architectural solutions from SO to GitHub commits and issues. It includes 2,534 relevant/positive ⟨architectural problem, solution⟩ pairs and 2,534 irrelevant/negatie ⟨architectural problem, solution⟩ pairs. This benchmark dataset provides a reusable resource for future studies, enabling consistent evaluation of new approaches or tools.
-- `2,534_ARPs.xlsx` - contains 2,534 randomly selected architectural solutions from the original set of 10,423 ARPs curated in our previous study [10], which were paired with architectural problems from Gitbu to form irrelevant pairs.
+The `data/` directory contains the following datasets:
+
+* **`CrossPArchPSBench.xlsx`** – The benchmark dataset proposed in this study for evaluating techniques that link architectural solutions from Stack Overflow to architectural problems described in GitHub commits and issues. It contains **2,534 relevant (positive)** ⟨architectural problem, solution⟩ pairs and **2,534 irrelevant (negative)** ⟨architectural problem, solution⟩ pairs. This benchmark dataset provides a reusable resource for future research, enabling consistent evaluation and comparison of new approaches or tools.
+
+* **`2,534_ARPs.xlsx`** – Contains **2,534 randomly selected architectural solutions** from the original set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with architectural problems from GitHub to construct the **irrelevant (negative)** ⟨architectural problem, solution⟩ pairs used in the benchmark dataset.
+
 
 ## Requirements
 
