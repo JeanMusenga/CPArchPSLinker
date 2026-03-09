@@ -5,4 +5,6 @@ This repository includes an introduction and research methodology overview, a de
 
 ## 🚨 Introduction and Research Methodology Overview
 
-Collaborative development platforms such as GitHub and Q&A sites like Stack Overflow (SO) serve as complementary knowledge sources in the Open Source Software (OSS) ecosystem.
+Collaborative development platforms such as GitHub and Q&A sites like Stack Overflow (SO) serve as complementary knowledge sources in the Open Source Software (OSS) ecosystem. When developers
+encounter architectural problems during OSS development, such as architectural anti-patterns, modularization issues, or performance bottlenecks, they frequently consult SO to find potential solutions. However, the unstructured, heterogeneous, and divergent nature of SO discussions makes identifying
+relevant architectural solutions time-consuming and labor-intensive.
