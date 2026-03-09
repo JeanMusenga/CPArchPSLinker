@@ -12,14 +12,14 @@ Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an auto
 
 ## 🏗️ CPArchPSLinker Overview
 
-**CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in Commits and Issues. CPArchPSLinker operates in two key stages:
+**CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in GitHub commits and Issues. CPArchPSLinker operates in two key stages:
 
-• Stage-1: Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate crossplatform
+- **Stage-1** – Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate crossplatform
 heterogeneity and distribution divergence between GitHub and SO artifacts. The DML-based model jointly projects architectural problems described in commits or issues and architectural
 solutions discussed in SO posts into a shared learned embedding space. The model is trained such that semantically relevant ⟨architectural problem, solution⟩ pairs are mapped closer together
 in this space, whereas irrelevant pairs are pushed farther apart. This learned metric space enables identification of cross-platform relevant ⟨architectural problem, solution⟩ pairs beyond surface-level textual similarity.
 
-• Stage-2: Linking Architectural Problems in Commits/Issues to Solutions on SO. In the second stage, CPArchPSLinker performs architectural problem–solution linking by ranking candidate
+- **Stage-2** – Linking Architectural Problems in Commits/Issues to Solutions on SO. In the second stage, CPArchPSLinker performs architectural problem–solution linking by ranking candidate
 solutions from SO for a given architectural problem described in a GitHub commit or issue. Specifically, this stage integrates multiple feature types, including Sentence-BERT embeddings,
 architecture-aware association features, and the relevance probabilities predicted by the DML-based model in Stage-1. These features are jointly leveraged within a learning-to-rank model to
 link each architectural problem to its relevant solutions and to produce a ranked list of candidate solutions. This design enables CPArchPSLinker to link the most relevant architectural solutions from SO to a given architectural problem.
