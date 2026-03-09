@@ -12,12 +12,6 @@ Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an auto
 
 ## 🏗️ CPArchPSLinker Overview
 
-**CPArchPSLinker Architecture**
-
-CPArchPSLinker architecture comprises five primary layers. 
-
-![CPArchPSLinker Architecture](images/CPArchPSLinker_Architecture.pdf)
-
 **CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in Commits and Issues. CPArchPSLinker operates in two key stages:
 
 • Stage-1: Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate crossplatform
@@ -29,3 +23,9 @@ in this space, whereas irrelevant pairs are pushed farther apart. This learned m
 solutions from SO for a given architectural problem described in a GitHub commit or issue. Specifically, this stage integrates multiple feature types, including Sentence-BERT embeddings,
 architecture-aware association features, and the relevance probabilities predicted by the DML-based model in Stage-1. These features are jointly leveraged within a learning-to-rank model to
 link each architectural problem to its relevant solutions and to produce a ranked list of candidate solutions. This design enables CPArchPSLinker to link the most relevant architectural solutions from SO to a given architectural problem.
+
+**CPArchPSLinker Architecture**
+
+CPArchPSLinker architecture comprises five primary layers. 
+
+![CPArchPSLinker Architecture](images/CPArchPSLinker_Architecture.pdf)
