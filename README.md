@@ -35,7 +35,6 @@ CPArchPSLinker architecture comprises five primary layers.
 
 ```plaintext
 ├── data                  # Datasets used in the study
-│ ├── New_data_source     # contains posts extracted from new data sources 
 
 ├── image/                # Contains a figure that illustrates the architecture of the proposed approach, CPArchPSLinker.
 
