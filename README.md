@@ -29,7 +29,7 @@ link each architectural problem to its relevant solutions and to produce a ranke
 
 CPArchPSLinker architecture comprises five primary layers. 
 
-![CPArchPSLinker Architecture](images/CPArchPSLinker_Architecture.pdf)
+![CPArchPSLinker Architecture](image/CPArchPSLinker_Architecture.png)
 
 ## 📁 Repository Structure
 
