@@ -3,14 +3,16 @@
 This replication package accompanies the paper CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms to Architectural Problems in Commits and Issues.
 The repository provides an introduction and an overview of CPArchPSLinker, along with its source code and baseline implementations, the dataset of GitHub commits/issues and Stack Overflow posts used in our study, and the experimental results.
 
-## 🚨 Introduction and CPArchPSLinker Overview
+## 🚨 Introduction
 
 Collaborative development platforms such as GitHub and Q&A sites like Stack Overflow (SO) serve as complementary knowledge sources in the Open Source Software (OSS) ecosystem. When developers
 encounter architectural problems during OSS development, such as architectural anti-patterns, modularization issues, or performance bottlenecks, they frequently consult SO to find potential solutions. However, the unstructured, heterogeneous, and divergent nature of SO discussions makes identifying
 relevant architectural solutions time-consuming and labor-intensive. To address this gap, we define the problem of linking architectural knowledge across Software
 Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an automated approach for this task.
 
-## 🏗️ CPArchPSLinker Architecture
+## 🏗️ CPArchPSLinker Overview
+
+**CPArchPSLinker Architecture**
 
 CPArchPSLinker architecture comprises five primary layers. 
 
