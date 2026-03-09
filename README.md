@@ -32,3 +32,51 @@ CPArchPSLinker architecture comprises five primary layers.
 ![CPArchPSLinker Architecture](images/CPArchPSLinker_Architecture.pdf)
 
 ## 📁 Repository Structure
+
+```plaintext
+├── data                  # Datasets used in the study
+│ ├── New_data_source     # contains posts extracted from new data sources 
+
+├── image/                # Contains figures that illustrate the overall research methodology and the architecture of the proposed framework, ArchISMiner.
+
+├── models/               # Source code for the ArchISPE framework and baseline models
+
+├── results/              # Experimental output and evaluation results
+
+├── user_study/           # Contains materials from the user study, conducted across five sessions.
+
+└── README.md             # Overview and usage instructions for this repository
+```
+
+## 🛠️ Dataset Description
+
+The `data/` directory includes:
+- `7,466_ARPs.xlsx` - contains 7,466 randomly selected ARPs from the original set of 10,423 ARPs curated in our previous study.
+- `14932_ARPs_and_Programming_Posts.xlsx` – contains posts labeled as APRs and programming posts (i.e., 7,466 ARPs and 7,466 Programming Posts) used to train and test the classifiers.
+- `367_ARPs_TestSet_for_IssueSolutionExtraction.xlsx` – contains 367 randomly selected ARPs from the 7,466 ARPs, used to test our model and baselines for extracting architectural issue–solution pairs.
+- `ArchISPBench.xlsx` – contains our proposed architectural benchmark dataset used to evaluate the potential techniques for extracting architectural issue-solution pairs from online developer community forums. It includes 367 architectural issues and 1,964 solutions extracted from SO, with 5,234 sentence candidates (1,970 from questions and 3,264 from answers). This benchmark dataset provides a reusable resource for future studies, enabling consistent evaluation of new approaches or tools.
+- `8454_ARPs_from_SoftwareEngineeringStackExchange.xlsx` - contains 8,454 ARPs collected from the Software Engineering Stack Exchange site.
+- `306_ARPs_from_GameDevelopment.xlsx` - contains 306 ARPs extracted from the Game Development Stack Exchange site.
+- `1580_ARPs_from_ServerFault.xlsx` - contains 1,580 ARPs gathered from the Server Fault Stack Exchange site.
+
+## Requirements
+
+To install all dependencies, run:
+
+```bash
+pip install -r requirements.txt
+```
+> **Note:** For PyTorch, follow the official installation guide to ensure proper installation for your system (CPU or GPU support).
+
+
+---
+## 📝 Citation
+
+```bibtex
+@article{Musenga2025ArchISMiner,
+  author = {Musengamana Jean de Dieu and Wenming Cao and Xinpeng Yin},
+  title = {{CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms to Architectural Problems in Commits and Issues}},
+  journal={arXiv preprint arXiv:xxx},
+  year={2026}
+}
+```
