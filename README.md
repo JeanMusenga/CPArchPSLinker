@@ -43,8 +43,6 @@ CPArchPSLinker architecture comprises five primary layers.
 
 ├── results/              # Experimental output and evaluation results
 
-├── user_study/           # Contains materials from the user study, conducted across five sessions.
-
 └── README.md             # Overview and usage instructions for this repository
 ```
 
