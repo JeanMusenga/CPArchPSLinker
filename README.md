@@ -14,6 +14,8 @@ Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an auto
 
 CPArchPSLinker architecture comprises five primary layers. 
 
+![CPArchPSLinker Architecture](images/CPArchPSLinker_Architecture.pdf)
+
 ## 🏗️ CPArchPSLinker
 
 **CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in Commits and Issues. CPArchPSLinker operates in two key stages:
