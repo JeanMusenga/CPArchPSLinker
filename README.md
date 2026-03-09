@@ -53,7 +53,9 @@ The `data/` directory includes:
 
 ## Requirements
 
-To install all dependencies, run:
+The project dependencies are listed in requirements.txt.
+
+To install all required packages, run:
 
 ```bash
 pip install -r requirements.txt
