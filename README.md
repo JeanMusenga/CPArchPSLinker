@@ -12,7 +12,7 @@ Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an auto
 
 ## 🏗️ CPArchPSLinker Overview
 
-**CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in GitHub commits and Issues. CPArchPSLinker operates in two key stages:
+**CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A platforms to Architectural Problems in GitHub commits and Issues. CPArchPSLinker operates in two key stages:
 
 **Stage-1** – Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate cross-platform
 heterogeneity and distribution divergence between GitHub and SO artifacts. The DML-based model jointly projects architectural problems described in commits or issues and architectural
@@ -37,9 +37,9 @@ CPArchPSLinker architecture comprises five primary layers.
 ├── data                  # Datasets used in the study
 │ ├── New_data_source     # contains posts extracted from new data sources 
 
-├── image/                # Contains figures that illustrate the overall research methodology and the architecture of the proposed framework, ArchISMiner.
+├── image/                # Contains a figure that illustrates the architecture of the proposed approach, CPArchPSLinker.
 
-├── models/               # Source code for the ArchISPE framework and baseline models
+├── models/               # Source code for the CPArchPSLinker and baseline models
 
 ├── results/              # Experimental output and evaluation results
 
