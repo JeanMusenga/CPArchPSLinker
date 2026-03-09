@@ -1,11 +1,11 @@
 # Replication Package for the Paper: CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms to Architectural Problems in Commits and Issues
 
-This replication package accompanies the paper CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms to Architectural Problems in Commits and Issues.
+This replication package accompanies the paper CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms like Stack Overflow (SO) to Architectural Problems in Commits and Issues.
 The repository provides an introduction and an overview of CPArchPSLinker, along with its source code and baseline implementations, the dataset of GitHub commits/issues and Stack Overflow posts used in our study, and the experimental results.
 
 ## 🚨 Introduction
 
-Collaborative development platforms such as GitHub and Q&A sites like Stack Overflow (SO) serve as complementary knowledge sources in the Open Source Software (OSS) ecosystem. When developers
+Collaborative development platforms such as GitHub and Q&A sites like SO serve as complementary knowledge sources in the Open Source Software (OSS) ecosystem. When developers
 encounter architectural problems during OSS development, such as architectural anti-patterns, modularization issues, or performance bottlenecks, they frequently consult SO to find potential solutions. However, the unstructured, heterogeneous, and divergent nature of SO discussions makes identifying
 relevant architectural solutions time-consuming and labor-intensive. To address this gap, we define the problem of linking architectural knowledge across Software
 Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an automated approach for this task.
@@ -14,7 +14,7 @@ Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an auto
 
 **CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A Platforms to Architectural Problems in GitHub commits and Issues. CPArchPSLinker operates in two key stages:
 
-**Stage-1** – Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate crossplatform
+**Stage-1** – Identification of Relevant ⟨architectural problem, solution⟩ Pairs. In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)-based model to mitigate cross-platform
 heterogeneity and distribution divergence between GitHub and SO artifacts. The DML-based model jointly projects architectural problems described in commits or issues and architectural
 solutions discussed in SO posts into a shared learned embedding space. The model is trained such that semantically relevant ⟨architectural problem, solution⟩ pairs are mapped closer together
 in this space, whereas irrelevant pairs are pushed farther apart. This learned metric space enables identification of cross-platform relevant ⟨architectural problem, solution⟩ pairs beyond surface-level textual similarity.
@@ -51,13 +51,8 @@ CPArchPSLinker architecture comprises five primary layers.
 ## 🛠️ Dataset Description
 
 The `data/` directory includes:
-- `7,466_ARPs.xlsx` - contains 7,466 randomly selected ARPs from the original set of 10,423 ARPs curated in our previous study.
-- `14932_ARPs_and_Programming_Posts.xlsx` – contains posts labeled as APRs and programming posts (i.e., 7,466 ARPs and 7,466 Programming Posts) used to train and test the classifiers.
-- `367_ARPs_TestSet_for_IssueSolutionExtraction.xlsx` – contains 367 randomly selected ARPs from the 7,466 ARPs, used to test our model and baselines for extracting architectural issue–solution pairs.
-- `ArchISPBench.xlsx` – contains our proposed architectural benchmark dataset used to evaluate the potential techniques for extracting architectural issue-solution pairs from online developer community forums. It includes 367 architectural issues and 1,964 solutions extracted from SO, with 5,234 sentence candidates (1,970 from questions and 3,264 from answers). This benchmark dataset provides a reusable resource for future studies, enabling consistent evaluation of new approaches or tools.
-- `8454_ARPs_from_SoftwareEngineeringStackExchange.xlsx` - contains 8,454 ARPs collected from the Software Engineering Stack Exchange site.
-- `306_ARPs_from_GameDevelopment.xlsx` - contains 306 ARPs extracted from the Game Development Stack Exchange site.
-- `1580_ARPs_from_ServerFault.xlsx` - contains 1,580 ARPs gathered from the Server Fault Stack Exchange site.
+- `CrossPArchPSBench.xlsx` – contains our proposed architectural benchmark dataset used to evaluate the potential techniques for linking architectural solutions from SO to GitHub commits and issues. It includes 2,534 relevant/positive ⟨architectural problem, solution⟩ pairs and 2,534 irrelevant/negatie ⟨architectural problem, solution⟩ pairs. This benchmark dataset provides a reusable resource for future studies, enabling consistent evaluation of new approaches or tools.
+- `2,534_ARPs.xlsx` - contains xxx randomly selected architectural solutions from the original set of 10,423 ARPs curated in our previous study [10], which were paired with architectural problems from Gitbu to form irrelevant pairs.
 
 ## Requirements
 
