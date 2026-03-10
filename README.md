@@ -6,8 +6,7 @@ The repository provides an introduction and an overview of CPArchPSLinker, along
 ## 🚨 Introduction
 
 Collaborative development platforms such as GitHub and Q&A sites like SO serve as complementary knowledge sources in the Open Source Software (OSS) ecosystem. When developers
-encounter architectural problems during OSS development, such as architectural anti-patterns, modularization issues, or performance bottlenecks, they frequently consult SO to find potential solutions. However, the unstructured, heterogeneous, and divergent nature of SO discussions makes identifying
-relevant architectural solutions time-consuming and labor-intensive. To address this gap, we define the problem of linking architectural knowledge across Software
+encounter architectural problems during OSS development, such as architectural anti-patterns, modularization issues, or performance bottlenecks, they frequently consult SO to find potential solutions. However, the unstructured, heterogeneous, and divergent nature of SO discussions makes identifying relevant architectural solutions time-consuming and labor-intensive. To address this gap, we define the problem of linking architectural knowledge across Software
 Engineering (SE) platforms (GitHub and SO) and introduce CPArchPSLinker, an automated approach for this task.
 
 ## 🏗️ CPArchPSLinker Overview
@@ -50,8 +49,7 @@ CPArchPSLinker architecture comprises five primary layers.
 The `data/` directory contains the following datasets:
 
 - **`CrossPArchPSBench.xlsx`** – The benchmark dataset proposed in this study for evaluating techniques that link architectural solutions from Stack Overflow to architectural problems described in GitHub commits and issues.  
-  It contains **5,068 labeled ⟨architectural problem, solution⟩ pairs**, including **2,534 relevant (positive)** pairs and **2,534 irrelevant (negative)** pairs. Each pair links a GitHub architectural problem with a Stack Overflow architectural solution and is annotated according to whether the solution addresses the problem.  
-  This benchmark dataset provides a reusable resource for future research, enabling consistent evaluation and comparison of architectural problem–solution linking approaches.
+  It contains **5,068 labeled ⟨architectural problem, solution⟩ pairs**, including **2,534 relevant (positive)** pairs and **2,534 irrelevant (negative)** pairs. Each pair links a GitHub architectural problem with a Stack Overflow architectural solution and is annotated according to whether the solution addresses the problem. This benchmark dataset provides a reusable resource for future research, enabling consistent evaluation and comparison of architectural problem–solution linking approaches.
 
 - **`2,071_Commits_Issues.xlsx`** – Contains **2,071 GitHub commits and issues** from open-source projects that describe architectural problems encountered during software development. Each entry includes the textual description of the problem along with associated metadata used in the study.
 
