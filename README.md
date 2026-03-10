@@ -45,14 +45,23 @@ CPArchPSLinker architecture comprises five primary layers.
 └── README.md             # Overview and usage instructions for this repository
 ```
 
-## 🛠️ Dataset Description
+## 🛠️ CrossPArchPSBench Description
+
+**CrossPArchPSBench** is the benchmark dataset proposed in this study for evaluating techniques that link architectural solutions from Stack Overflow (SO) to architectural problems described in GitHub commits and issues.  
+
+The dataset contains **5,068 labeled ⟨architectural problem, solution⟩ pairs**, including:
+- **2,534 relevant (positive) pairs**, where the Stack Overflow solution addresses the architectural problem described in GitHub.
+- **2,534 irrelevant (negative) pairs**, where the solution does not address the corresponding architectural problem.
+
+This benchmark provides a reusable resource for future research on **cross-platform architectural knowledge linking**, enabling consistent evaluation and comparison of new approaches and tools.
 
 The `data/` directory contains the following datasets:
 
-* **`CrossPArchPSBench.xlsx`** – The benchmark dataset proposed in this study for evaluating techniques that link architectural solutions from Stack Overflow to architectural problems described in GitHub commits and issues. It contains **2,534 relevant (positive)** ⟨architectural problem, solution⟩ pairs and **2,534 irrelevant (negative)** ⟨architectural problem, solution⟩ pairs. This benchmark dataset provides a reusable resource for future research, enabling consistent evaluation and comparison of new approaches or tools.
+- **`2,071_Commits_Issues.xlsx`** Contains **2,071 GitHub commits and issues** from open-source projects that describe architectural problems encountered during software development. Each entry includes the textual description of the problem and associated metadata used in the study.
 
-* **`2,534_ARPs.xlsx`** – Contains **2,534 randomly selected architectural solutions** from the original set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with architectural problems from GitHub to construct the **irrelevant (negative)** ⟨architectural problem, solution⟩ pairs used in the benchmark dataset.
+- **`5,068_Labeled_Relevant_and_Irrelevant_Pairs.xlsx`**  Contains the complete **benchmark dataset of 5,068 labeled ⟨architectural problem, solution⟩ pairs**. Each pair links a GitHub architectural problem with a Stack Overflow architectural solution and is annotated as either **relevant (positive)** or **irrelevant (negative)**. This dataset is used to evaluate the effectiveness of architectural problem–solution linking approaches.
 
+- **`2,534_ARPs.xlsx`**  Contains **2,534 randomly selected architectural solutions** from the original set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with GitHub architectural problems to construct the **irrelevant (negative) ⟨architectural problem, solution⟩ pairs** included in the benchmark dataset.
 
 ## Requirements
 
