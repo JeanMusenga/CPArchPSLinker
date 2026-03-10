@@ -9,7 +9,7 @@ The repository provides an overview of **CPArchPSLinker**, along with its source
 
 ## 🚨 Introduction
 
-Collaborative development platforms such as **GitHub** and Q&A websites such as **Stack Overflow (SO)** serve as complementary knowledge sources within the **Open Source Software (OSS)** ecosystem. When developers encounter architectural problems during OSS development—such as architectural anti-patterns, modularization issues, or performance bottlenecks—they often consult SO to identify potential solutions.
+Collaborative development platforms such as **GitHub** and Q&A websites such as **Stack Overflow (SO)** serve as complementary knowledge sources within the **Open Source Software (OSS)** ecosystem. When developers encounter architectural problems during OSS development, such as architectural anti-patterns, modularization issues, or performance bottlenecks, they often consult SO to identify potential solutions.
 
 However, the unstructured, heterogeneous, and divergent nature of discussions on SO makes identifying relevant architectural solutions time-consuming and labor-intensive. To address this challenge, we define the problem of **linking architectural knowledge across Software Engineering (SE) platforms** (GitHub and SO) and introduce **CPArchPSLinker**, an automated approach designed for this task.
 
