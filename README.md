@@ -29,7 +29,7 @@ The model is trained such that semantically relevant ⟨architectural problem, s
 
 In the second stage, CPArchPSLinker performs architectural problem–solution linking by ranking candidate solutions from SO for a given architectural problem described in a GitHub commit or issue.
 
-This stage integrates multiple feature types, including **Sentence-BERT embeddings**, **architecture-aware association features**, and the **relevance probabilities predicted by the DML-based model in Stage 1**. These features are jointly leveraged within a **learning-to-rank model** to link each architectural problem to its most relevant solutions and produce a ranked list of candidate solutions.
+This stage integrates multiple feature types, including  **Lexical features**, **Sentence-BERT embeddings**, **architecture-aware association features**, and the **relevance probabilities predicted by the DML-based model in Stage 1**. These features are jointly leveraged within a **learning-to-rank model** to link each architectural problem to its most relevant solutions and produce a ranked list of candidate solutions.
 
 ---
 
@@ -57,10 +57,10 @@ The **CPArchPSLinker architecture** consists of five primary layers.
 
 The `data/` directory contains the following datasets:
 
-- **`CrossPArchPSBench.xlsx`** – The benchmark dataset proposed in this study for evaluating techniques that link architectural solutions from Stack Overflow to architectural problems described in GitHub commits and issues.  
-  It contains **5,068 labeled ⟨architectural problem, solution⟩ pairs**, including **2,534 relevant (positive)** pairs and **2,534 irrelevant (negative)** pairs. Each pair links a GitHub architectural problem with a Stack Overflow architectural solution and is annotated according to whether the solution addresses the problem. This benchmark dataset provides a reusable resource for future research, enabling consistent evaluation and comparison of architectural problem–solution linking approaches.
+- **`CrossPArchPSBench.xlsx`** – The benchmark dataset proposed in this study for evaluating techniques that link architectural solutions from SO to architectural problems described in GitHub commits and issues.  
+  It contains **5,068 labeled ⟨architectural problem, solution⟩ pairs**, including **2,534 relevant (positive)** pairs and **2,534 irrelevant (negative)** pairs. Each pair links a GitHub architectural problem with a SO architectural solution and is annotated according to whether the solution addresses the problem. This benchmark dataset provides a reusable resource for future research, enabling consistent evaluation and comparison of architectural problem–solution linking approaches.
 
-- **`2,071_Commits_Issues.xlsx`** – Contains **2,071 GitHub commits and issues** from **1,805 open-source projects** that describe architectural problems encountered during software development and reference architectural solutions from Stack Overflow. Each entry includes the textual description of the architectural problem used in this study, while the corresponding solution descriptions are obtained from Stack Overflow.
+- **`2,071_Commits_Issues.xlsx`** – Contains **2,071 GitHub commits and issues** from **1,805 open-source projects** that describe architectural problems encountered during software development and reference architectural solutions from SO. Each entry includes the textual description of the architectural problem used in this study, while the corresponding solution descriptions are obtained from SO.
 
 - **`2,534_ARPs.xlsx`** – Contains **2,534 randomly selected architectural solutions** from the original set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with GitHub architectural problems to construct the **irrelevant (negative) ⟨architectural problem, solution⟩ pairs** included in the benchmark dataset.
 
