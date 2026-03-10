@@ -1,4 +1,4 @@
-# Replication Package for the Paper  
+# Replication Package for the Paper:  
 ## *CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms to Architectural Problems in Commits and Issues*
 
 This replication package accompanies the paper **“CPArchPSLinker: Cross-Platform Linking of Architectural Solutions from Q&A Platforms to Architectural Problems in Commits and Issues.”**
