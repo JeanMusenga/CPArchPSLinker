@@ -39,7 +39,7 @@ CPArchPSLinker architecture comprises five primary layers.
 
 ├── models/               # Source code for the CPArchPSLinker and baseline models
 
-├── results/              # Experimental output and evaluation results
+├── results/              # Experimental outputs
 
 └── README.md             # Overview and usage instructions for this repository
 ```
