@@ -55,6 +55,10 @@ The `data/` directory contains the following datasets:
 
 - **`2,534_ARPs.xlsx`** – Contains **2,534 randomly selected architectural solutions** from the original set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with GitHub architectural problems to construct the **irrelevant (negative) ⟨architectural problem, solution⟩ pairs** included in the benchmark dataset.
 
+The `results/` directory contains the following dataset:
+
+- **`CPArchPSLinker_Results.xlsx`** – Contains the experimental results produced by **CPArchPSLinker** evaluated in our study. The file reports the performance metrics used in the paper, including **Hit Rate@k (k = 3, 5, 10)** and **Mean Reciprocal Rank (MRR)**, computed on the **CrossPArchPSBench** benchmark dataset. These results allow readers to verify the effectiveness of CPArchPSLinker and compare it with existing techniques.
+
 ## Requirements
 
 The project dependencies are listed in requirements.txt.
