@@ -62,7 +62,7 @@ The `data/` directory contains the following datasets:
 
 - **`2,071_Commits_Issues.xlsx`** – Contains **2,071 GitHub commits and issues** from **1,805 open-source projects** that describe architectural problems encountered during software development and reference architectural solutions from SO. Each entry includes the textual description of the architectural problem used in this study, while the corresponding solution descriptions are obtained from SO.
 
-- **`2,534_ARPs.xlsx`** – Contains **2,534 randomly selected architectural solutions** from the original set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with GitHub architectural problems to construct the **irrelevant (negative) ⟨architectural problem, solution⟩ pairs** included in the benchmark dataset.
+- **`2,534_Architectural_Solutions.xlsx`** – Contains **2,534 randomly selected architectural solutions** from the set of **10,423 architectural solutions (ARPs)** curated in our previous study [10]. These solutions were paired with GitHub architectural problems exctracted from GitHub commits and issues to construct the **irrelevant (negative) ⟨architectural problem, solution⟩ pairs** included in the benchmark dataset.
 
 The `results/` directory contains the following dataset:
 
