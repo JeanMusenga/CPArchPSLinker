@@ -51,9 +51,9 @@ The **CPArchPSLinker architecture** consists of five primary layers.
 ```plaintext
 ├── CPArchPSLinker        # Source code for the CPArchPSLinker framework
 
-├── RQ1_Baselines         # Contains source code for Baselines for evaluating RQ1
+├── RQ1_Baselines         # Baseline implementations for RQ1 evaluation
 
-├── RQ2_Baselines         # Contains source code for the Baselines for evaluating RQ2
+├── RQ2_Baselines         # Baseline implementations for RQ2 evaluation
 
 ├── data                  # Datasets used in the study
 
