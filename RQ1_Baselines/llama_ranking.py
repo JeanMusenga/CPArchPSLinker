@@ -6,11 +6,11 @@ import tempfile
 import os 
 
 # ------------------ Settings ------------------
-PATH = "Inference_Experiment_dataset.xlsx"
+PATH = "xxx"      #load inference_dataset
 MAX_CANDIDATES = 15
 TOP_K = 5
 OLLAMA_MODEL = "llama3.3"
-OUTPUT_PATH = "llama_ranked_output.xlsx"
+OUTPUT_PATH = "xxx"    #llama_ranked_output
 
 # ------------------ Load Dataset ------------------
 df = pd.read_excel(PATH)
