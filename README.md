@@ -21,7 +21,7 @@ However, the unstructured, heterogeneous, and divergent nature of discussions on
 
 ### **Stage 1 – Identification of Relevant ⟨Architectural Problem, Solution⟩ Pairs**
 
-In the first stage, CPArchPSLinker employs a **Deep Metric Learning (DML)**–based model to address cross-platform heterogeneity and distribution divergence between GitHub and SO artifacts. The DML model jointly projects architectural problems described in commits or issues and architectural solutions discussed in SO posts into a shared embedding space.
+In the first stage, CPArchPSLinker employs a Deep Metric Learning (DML)–based model to address cross-platform heterogeneity and distribution divergence between GitHub and SO artifacts. The DML model jointly projects architectural problems described in commits or issues and architectural solutions discussed in SO posts into a shared embedding space.
 
 The model is trained such that semantically relevant ⟨architectural problem, solution⟩ pairs are mapped closer together in this space, while irrelevant pairs are pushed farther apart. This learned metric space enables the identification of cross-platform relevant pairs beyond surface-level textual similarity.
 
