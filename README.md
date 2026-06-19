@@ -25,12 +25,13 @@ In the first stage, CPArchPSLinker employs a **Deep Metric Learning (DML)**–ba
 
 The model is trained such that semantically relevant ⟨architectural problem, solution⟩ pairs are mapped closer together in this space, while irrelevant pairs are pushed farther apart. This learned metric space enables the identification of cross-platform relevant pairs beyond surface-level textual similarity.
 
-### **Stage 2 – Linking Architectural Problems in Commits/Issues to Solutions on SO**
+### **Stage 2 – Candidate Solution Retrieval and Rank Layer**
 
 In the second stage, CPArchPSLinker performs architectural problem–solution linking by ranking candidate solutions from SO for a given architectural problem described in a GitHub commit or issue.
 
 This stage integrates multiple feature types, including  **Lexical features**, **Sentence-BERT embeddings**, **architecture-aware association features**, and the **relevance probabilities predicted by the DML-based model in Stage 1**. These features are jointly leveraged within a **learning-to-rank model** to link each architectural problem to its most relevant solutions and produce a ranked list of candidate solutions.
 
+### **Stage 3 – LLM-Assisted Re-ranking and Summary Generation**
 ---
 
 ## 🧩 CPArchPSLinker Architecture
