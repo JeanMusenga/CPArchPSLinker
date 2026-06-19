@@ -8,10 +8,10 @@ import math
 openai.api_key = "YOUR_OPENAI_API_KEY_HERE"
 
 # ------------------ Settings ------------------
-INFERENCE_PATH = "Inference_Experiment_dataset.xlsx"
-GROUND_TRUTH_PATH = "ground_truth_Evaluation.xlsx"
-RANKED_OUTPUT_PATH = "gpt4o_ranked_output_shuffled.xlsx"
-METRICS_OUTPUT_PATH = "gpt4o_evaluation_results_shuffled.xlsx"
+INFERENCE_PATH = "Inference_dataset.xlsx"
+GROUND_TRUTH_PATH = "ground_truth_data.xlsx"
+RANKED_OUTPUT_PATH = "gpt4o_ranked_output.xlsx"
+METRICS_OUTPUT_PATH = "gpt4o_evaluation_results.xlsx"
 
 MAX_CANDIDATES = 15
 MODEL = "gpt-4o"
