@@ -35,9 +35,9 @@ This stage integrates multiple complementary feature groups, including lexical s
 
 In the third stage, CPArchPSLinker further refines the ranked candidate solutions using a large language model (LLM).
 
-Given the top-ranked candidates from Stage 2, the LLM (e.g., GPT-4o) performs context-aware re-ranking by reasoning over the semantic alignment between the architectural problem and each candidate solution, capturing higher-level design intent, trade-offs, and implicit architectural constraints that are not fully modeled by feature-based ranking.
+Given the top-ranked candidates from Stage 2, the LLM (e.g., GPT-4o) performs context-aware re-ranking by reasoning over the semantic alignment between the architectural problem and each candidate solution, capturing higher-level design intent, trade-offs, and implicit architectural constraints that are not fully modeled by feature-based rankingb. In addition, this stage generates a concise natural language summary of the most relevant solutions, highlighting key architectural insights and their applicability to the target problem. This improves interpretability and supports practical adoption of the recommended solutions..
 
-In addition, this stage generates a concise natural language summary of the most relevant solutions, highlighting key architectural insights and their applicability to the target problem. This improves interpretability and supports practical adoption of the recommended solutions.
+
 ---
 
 ## 🧩 CPArchPSLinker Architecture
