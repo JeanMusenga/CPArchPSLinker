@@ -17,7 +17,7 @@ However, the unstructured, heterogeneous, and divergent nature of discussions on
 
 ## 🏗️ CPArchPSLinker Overview
 
-**CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A platforms to architectural problems described in GitHub commits and issues. The approach operates in two main stages.
+**CPArchPSLinker** is an approach for automatically linking architectural solutions from Q&A platforms to architectural problems described in GitHub commits and issues. The approach operates in three main stages.
 
 ### **Stage 1 – Identification of Relevant ⟨Architectural Problem, Solution⟩ Pairs**
 
