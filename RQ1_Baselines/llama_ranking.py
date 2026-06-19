@@ -124,3 +124,10 @@ for commit_id, group in df.groupby("commit_id"):
 # ------------------ Save ------------------
 pd.DataFrame(results).to_excel(OUTPUT_PATH, index=False)
 print("LLaMA ranking completed. Saved to:", OUTPUT_PATH)
+
+====LlamaRanking Results=====
+HR@3: 0.7771
+HR@5: 0.7962
+HR@10: 0.8249
+HR@15: 0.8845
+MRR: 0.7319
