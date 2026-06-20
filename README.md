@@ -33,9 +33,10 @@ This stage integrates multiple complementary feature groups, including lexical s
 
 ### **Stage 3 – LLM-Assisted Re-ranking and Summary Generation**
 
-In the third stage, CPArchPSLinker further refines the ranked candidate solutions using a large language model (LLM). Given the top-ranked candidates from Stage 2, the LLM (e.g., GPT-4o) performs context-aware re-ranking by reasoning over the semantic alignment between the architectural problem and each candidate solution, capturing higher-level design intent, trade-offs, and implicit architectural constraints that are not fully modeled by feature-based rankingb. In addition, this stage generates a concise natural language summary of the most relevant solutions, highlighting key architectural insights and their applicability to the target problem. This improves interpretability and supports practical adoption of the recommended solutions..
----
+In the third stage, CPArchPSLinker further refines the ranked candidate solutions using a large language model (LLM). Given the top-ranked candidates from Stage 2, the LLM (e.g., GPT-4o) performs context-aware re-ranking by reasoning over the semantic alignment between the architectural problem and each candidate solution, capturing higher-level design intent, trade-offs, and implicit architectural constraints that are not fully modeled by feature-based rankingb. In addition, this stage generates a concise natural language summary of the most relevant solutions, highlighting key architectural insights and their applicability to the target problem. This improves interpretability and supports practical adoption of the recommended solutions.
 
+
+---
 ## 🧩 CPArchPSLinker Architecture
 
 The **CPArchPSLinker architecture** consists of five primary layers.
@@ -77,7 +78,7 @@ The `results/` directory contains the following dataset:
 
 - **`Stage-2_Results.xlsx`** – Contains the intermediate relevance scoring results produced by CPArchPSLinker on the CrossPArchPSBench benchmark dataset. Each record corresponds to a candidate architectural problem–solution pair and includes: commit_id (GitHub commit or issue identifier), solution_id (Stack Overflow post identifier), problem_text (architectural problem description), solution_text (architectural solution description), stage2_score (relevance score predicted by the Stage-2 model), and stage2_rank (ranking position assigned to each solution for a given architectural problem)..
 
-- - **`Stage-3_Results.xlsx`** – Contains the final linking results produced by CPArchPSLinker on the CrossPArchPSBench benchmark dataset. Each record represents a ranked and refined architectural problem–solution mapping after the final ranking stage, and includes: commit_id (GitHub commit or issue identifier), solution_id (Stack Overflow post identifier), problem_text (architectural problem description), solution_text (architectural solution description), summary (generated summary for each linked solution), and final_rank (final ranking position assigned to each solution for a given architectural problem).
+- **`Stage-3_Results.xlsx`** – Contains the final linking results produced by CPArchPSLinker on the CrossPArchPSBench benchmark dataset. Each record represents a ranked and refined architectural problem–solution mapping after the final ranking stage, and includes: commit_id (GitHub commit or issue identifier), solution_id (Stack Overflow post identifier), problem_text (architectural problem description), solution_text (architectural solution description), summary (generated summary for each linked solution), and final_rank (final ranking position assigned to each solution for a given architectural problem).
 
 ## Requirements
 
