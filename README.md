@@ -61,7 +61,7 @@ The **CPArchPSLinker architecture** consists of five primary layers.
 
 ├── results/              # Experimental outputs requirements.txt
 
-├── requirements.txt/      # Lists all Python dependencies required to run the project
+├── requirements.txt      # Lists all Python dependencies required to run the project
 
 └── README.md             # Overview and usage instructions for this repository
 ```
