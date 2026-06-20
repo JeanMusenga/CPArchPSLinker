@@ -29,7 +29,7 @@ The model is trained such that semantically relevant ⟨architectural problem, s
 
 In the second stage, CPArchPSLinker performs architectural problem–solution linking by retrieving and ranking candidate solutions from Stack Overflow for a given GitHub commit or issue.
 
-This stage integrates multiple complementary feature groups, including lexical similarity features, Sentence-BERT embeddings, architecture-aware association features, and the relevance probability signals produced by the Stage 1 DML model. These heterogeneous signals are combined within a learning-to-rank framework to estimate the relevance of each candidate solution and generate a ranked list of architectural solutions for each problem..
+This stage integrates multiple complementary feature groups, including lexical similarity features, Sentence-BERT embeddings, architecture-aware association features, and the relevance probability signals produced by the Stage 1 DML model. These heterogeneous signals are combined within a learning-to-rank framework to estimate the relevance of each candidate solution and produce a ranked list of architectural solutions for each problem..
 
 ### **Stage 3 – LLM-Assisted Re-ranking and Summary Generation**
 
