@@ -28,11 +28,11 @@ all_results = []
 def judge_relevance(problem_text, solution_text):
 
     prompt = f"""
-Given an architectural problem extracted from a GitHub issue/commit and a candidate Stack Overflow post, determine whether the post provides a relevant architectural solution to the given problem.
+Given an architectural problem and a candidate post (e.g., an architectural solution), determine whether the post is relevant to the given problem.
 
 Input:
 Architectural Problem: {problem_text}
-Candidate Stack Overflow Post: {solution_text}
+Candidate Post: {solution_text}
 
 Output Format:
 Return only a single value: 1 (relevant) or 0 (not relevant). Do not output any additional text, explanation, or formatting.
