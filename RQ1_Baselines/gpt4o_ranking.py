@@ -46,9 +46,7 @@ def rank_candidates_gpt4o_batch(commit_batch):
         )
 
         prompt = f"""
-You are an expert software architect.
-
-Given the following architectural problem, rank the candidate architectural solutions extracted from Stack Overflow according to their relevance to the problem.
+Given the following architectural problem, rank the candidate posts (e.g., architectural solutions) according to their relevance to the problem.
 
 Input:
 Architectural Problem: {problem_text}
@@ -57,7 +55,7 @@ Architectural Solutions:
 {candidate_list_text}
 
 Output Format:
-Return ONLY a Top-{TOP_K} ranked list of architectural solution identifiers ordered from most relevant to least relevant, formatted as:
+Return ONLY a Top-{TOP_K} ranked list of post identifiers ordered from most relevant to least relevant, formatted as:
 [1-21174209, 2-66989236, 3-58820361, ...]
 
 Do not output any additional text, explanation, or formatting.
@@ -187,8 +185,8 @@ print("Overall Metrics:")
 print(overall_metrics)
 
 ====GPTRanking Results=====
-HR@3: 0.7841
+HR@3: 0.7721 
 HR@5: 0.8271
 HR@10: 0.9249
-HR@15: 0.9845
-MRR: 0.7545
+HR@15: 0.9645
+MRR: 0.6505
