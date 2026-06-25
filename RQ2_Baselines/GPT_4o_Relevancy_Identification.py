@@ -30,7 +30,7 @@ y_true = df["label"].values
 def build_prompt(problem_text, solution_text):
 
     return f"""
-Given an architectural problem extracted from a GitHub issue/commit and a candidate Stack Overflow post, determine whether the post provides a relevant architectural solution to the given problem.
+Given an architectural problem and a candidate post (e.g., an architectural solution), determine whether the post is relevant to the given problem.
 
 Input:
 Architectural Problem: {problem_text}
