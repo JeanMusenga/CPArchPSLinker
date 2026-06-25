@@ -36,9 +36,7 @@ def rank_candidates_ollama(problem_text, candidate_texts, candidate_ids, top_k=5
     )
 
     prompt = f"""
-You are an expert software architect.
-
-Given the following architectural problem, rank the candidate architectural solutions extracted from Stack Overflow according to their relevance to the problem.
+Given the following architectural problem, rank the candidate posts (e.g., architectural solutions) according to their relevance to the problem.
 
 Input:
 Architectural Problem: {problem_text}
@@ -47,7 +45,7 @@ Architectural Solutions:
 {candidate_list_text}
 
 Output Format:
-Return ONLY a Top-{top_k} ranked list of architectural solution identifiers ordered from most relevant to least relevant, formatted as:
+Return ONLY a Top-{top_k} ranked list of post identifiers ordered from most relevant to least relevant, formatted as:
 [1-21174209, 2-66989236, 3-58820361, ...]
 
 Do not output any additional text, explanation, or formatting.
@@ -181,8 +179,8 @@ print("\nOverall Metrics:")
 print(overall_metrics)
 
 ====LlamaRanking Results=====
-HR@3: 0.7771
+HR@3: 0.7571
 HR@5: 0.7962
 HR@10: 0.8249
 HR@15: 0.8845
-MRR: 0.7319
+MRR: 0.6319
