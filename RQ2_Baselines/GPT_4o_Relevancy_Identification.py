@@ -34,7 +34,7 @@ Given an architectural problem and a candidate post (e.g., an architectural solu
 
 Input:
 Architectural Problem: {problem_text}
-Candidate Stack Overflow Post: {solution_text}
+Candidate Post: {solution_text}
 
 Output Format:
 Return only a single value: 1 (relevant) or 0 (not relevant). Do not output any additional text, explanation, or formatting.
