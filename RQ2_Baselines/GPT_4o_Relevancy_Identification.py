@@ -141,3 +141,9 @@ metrics_df.to_excel(OUTPUT_PATH, index=False)
 
 print("\n===== GPT-4o Relevance Identification Completed =====")
 print(metrics_df.mean(numeric_only=True))
+
+
+====Results=====
+Precision: 0.9130 
+Recall: 0.8400
+F1-score: 0.8950
