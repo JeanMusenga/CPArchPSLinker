@@ -120,3 +120,8 @@ pd.DataFrame(all_results).to_excel("llama_cv_predictions.xlsx", index=False)
 pd.DataFrame(fold_metrics).to_excel(OUTPUT_PATH, index=False)
 
 print("10-fold CV completed. Results saved.")
+
+====Results=====
+Precision: 0.7522 
+Recall: 0.7567
+F1-score: 0.6030
