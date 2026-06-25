@@ -1,0 +1,71 @@
+{
+  "PROBLEM_TERMS": {
+    "performance": [
+      "latency","slow","bottleneck","throughput","performance",
+      "response time","delay","slowness","overhead","cpu usage",
+      "memory usage","memory leak","heap","garbage collection"
+    ],
+    "scalability": [
+      "scale","scaling","load","traffic","high traffic",
+      "traffic spike","burst","load balancing","high load"
+    ],
+    "security": [
+      "authentication","authorization","vulnerability","security","encryption",
+      "audit log","audit logging","security log","gdpr logging","hipaa compliance"
+    ],
+    "maintainability": [
+      "refactor","technical debt","maintainability","clean code",
+      "code smell","complexity","legacy code"
+    ],
+    "reliability": [
+      "crash","failure","availability","reliability","fault",
+      "fault tolerance","failover","self-healing","retry","timeout"
+    ],
+    "deployment": [
+      "deployment","docker","kubernetes","ci/cd","release","ci pipeline"
+    ],
+    "communication": [
+      "communication","rpc","rest","http","message","grpc","api call"
+    ],
+    "anti_pattern": [
+      "god class","spaghetti","anti-pattern","monolith smell","tight coupling"
+    ],
+    "state_management": [
+      "checkpoint","checkpointing","snapshot","state persistence",
+      "restore","rollback","recovery","crash recovery","state restore"
+    ]
+  },
+
+  "SOLUTION_TERMS": {
+    "architectural_pattern": [
+      "microservice","mvc","layered","event-driven","monolith","service-oriented"
+    ],
+    "architectural_tactic": [
+      "caching","load balancing","replication","batch processing",
+      "lazy loading","pagination","streaming","pooling"
+    ],
+    "framework": [
+      "spring","django","react","flask","node","express"
+    ],
+    "api": [
+      "api","rest","grpc","graphql","endpoint"
+    ],
+    "protocol": [
+      "http","https","tcp","udp","websocket"
+    ],
+    "refactoring": [
+      "refactor","restructure","redesign","modularization","decoupling"
+    ],
+    "recovery_mechanism": [
+      "checkpointing","snapshot","write-ahead log","wal",
+      "event sourcing","redo log","undo log","replication log"
+    ],
+    "concurrency_tactic": [
+      "thread pool","connection pool","worker pool","async",
+      "multithreading","parallel","concurrency","non-blocking"
+    ],
+    "monitoring_observability": [
+      "monitoring","tracing","logging","metrics","profiling","benchmark"
+    ]
+  }
+}
