@@ -52,6 +52,8 @@ The **CPArchPSLinker architecture** consists of five primary layers.
 
 ├── RQ2_Baselines         # Baseline implementations for RQ2 evaluation
 
+├── User_Study            # Contains user study materials, evaluation forms, and participant responses
+
 ├── data                  # Datasets used in the study
 
 ├── image/                # Contains a figure that illustrates the architecture of the proposed approach, CPArchPSLinker.
