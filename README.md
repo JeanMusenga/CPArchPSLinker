@@ -29,11 +29,11 @@ The model is trained such that semantically relevant ⟨architectural problem, s
 
 In the second stage, CPArchPSLinker performs architectural problem–solution linking by retrieving and ranking candidate solutions from Stack Overflow for a given GitHub commit or issue.
 
-This stage integrates multiple complementary feature groups, including lexical similarity features, Sentence-BERT embeddings, architecture-aware association features, and the relevance probability signals produced by the Stage 1 DML model. These heterogeneous signals are combined within a learning-to-rank framework to estimate the relevance of each candidate solution and produce a ranked list of architectural solutions for each problem..
+This stage integrates multiple complementary feature groups, including lexical Sentence-BERT embeddings, architecture-aware association features, and the relevance probability signals produced by the Stage 1 DML model. These heterogeneous signals are combined within a learning-to-rank framework to estimate the relevance of each potential solution and produce a candidate list of architectural solutions for each problem.
 
 ### **Stage 3 – LLM-Assisted Re-ranking and Summary Generation**
 
-In the third stage, CPArchPSLinker further refines the ranked candidate solutions using a large language model (LLM). Given the top-ranked candidates from Stage 2, the LLM (e.g., GPT-4o) performs context-aware re-ranking by reasoning over the semantic alignment between the architectural problem and each candidate solution, capturing higher-level design intent, trade-offs, and implicit architectural constraints that are not fully modeled by feature-based rankingb. In addition, this stage generates a concise natural language summary of the most relevant solutions, highlighting key architectural insights and their applicability to the target problem. This improves interpretability and supports practical adoption of the recommended solutions.
+In the third stage, CPArchPSLinker further refines the ranked candidate solutions using a Large Language Model (LLM). Given the top-ranked candidates from Stage 2, the LLM (e.g., GPT-4o) performs context-aware re-ranking by reasoning over the semantic alignment between the architectural problem and each candidate solution, capturing higher-level design intent, trade-offs, and implicit architectural constraints that are not fully modeled by feature-based ranking layer. In addition, this stage generates a concise natural language summary of the candidate solutions, highlighting key architectural insights and their applicability to the target problem. This improves interpretability and supports practical adoption of the recommended solutions.
 
 
 ---
