@@ -1,3 +1,26 @@
+Environment
+===========
+
+Operating System:
+Ubuntu 22.04 LTS
+
+Python:
+Python 3.10
+
+Deep Learning Hardware:
+8 × NVIDIA GeForce RTX 2080 Ti GPUs
+GPU Memory: 11 GB per GPU
+
+GPU Driver:
+NVIDIA Driver 440.33.01
+
+CUDA:
+CUDA 10.2 
+
+The experiments were conducted on an NVIDIA GPU-enabled server.
+GPU acceleration was utilized whenever available. The provided scripts
+can also run on CPU. 
+
 Required packages
 =================
 
