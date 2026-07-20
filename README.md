@@ -60,7 +60,9 @@ The **CPArchPSLinker architecture** consists of five primary layers.
 
 ├── results/              # Experimental outputs requirements.txt
 
-├── requirements.txt      # Lists all Python dependencies required to run the project
+├── environment.txt       # Describes the experimental environment, including OS, Python version, GPU, and CUDA
+
+├── requirements.txt      # Lists all Python dependencies and their versions required to reproduce the experiments
 
 └── README.md             # Overview and usage instructions for this repository
 ```
